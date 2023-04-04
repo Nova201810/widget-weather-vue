@@ -69,7 +69,7 @@
           {{
             type === 'hourly'
               ? `${weather.hourly.temperature_2m[index]}${weather.hourly_units.temperature_2m}`
-              : `${(weather.daily.temperature_2m_min[index] + weather.daily.temperature_2m_max[index]) / 2}${weather.daily_units.temperature_2m_max}`
+              : `${((weather.daily.temperature_2m_min[index] + weather.daily.temperature_2m_max[index]) / 2).toFixed(1)}${weather.daily_units.temperature_2m_max}`
           }}
         </v-card-subtitle>
       </v-card>
